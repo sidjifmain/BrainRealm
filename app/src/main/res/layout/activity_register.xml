@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_back"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_screen_image" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/goldman"
+        android:text="Qeydiyyat"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aramıza xoş gəlmisiniz!"
+        android:textColor="@color/white2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/register_email_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/input_frame"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="15sp"
+        android:textColor="@color/white2"
+        android:textColorHint="@color/white2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="E-poçt ünvanınız"
+        android:textColor="@color/white2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_email_input"
+        app:layout_constraintStart_toStartOf="@+id/register_email_input" />
+
+    <EditText
+        android:id="@+id/register_pass_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_frame"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="15sp"
+        android:textColor="@color/white2"
+        android:textColorHint="@color/white2"
+        app:layout_constraintEnd_toEndOf="@+id/register_email_input"
+        app:layout_constraintStart_toStartOf="@+id/register_email_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_email_input" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Parolunuz"
+        android:textColor="@color/white2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_pass_input"
+        app:layout_constraintStart_toStartOf="@+id/register_pass_input" />
+
+    <EditText
+        android:id="@+id/register_cPass_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_frame"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="15sp"
+        android:textColor="@color/white2"
+        android:textColorHint="@color/white2"
+        app:layout_constraintEnd_toEndOf="@+id/register_pass_input"
+        app:layout_constraintStart_toStartOf="@+id/register_pass_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_pass_input" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Yenidən parolunuz"
+        android:textColor="@color/white2"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_cPass_input"
+        app:layout_constraintStart_toStartOf="@+id/register_cPass_input" />
+
+    <ImageView
+        android:id="@+id/register_pass_visible_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/register_pass_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_pass_input"
+        app:layout_constraintTop_toTopOf="@+id/register_pass_input"
+        app:srcCompat="@drawable/hide_password_icon" />
+
+    <ImageView
+        android:id="@+id/register_cPass_visible_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/register_cPass_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_cPass_input"
+        app:layout_constraintTop_toTopOf="@+id/register_cPass_input"
+        app:srcCompat="@drawable/hide_password_icon" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/register_cPass_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_cPass_input" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/goldman"
+        android:paddingTop="5dp"
+        android:text="Qaydalarla"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" tanış oldum və razılaşıram."
+        android:textColor="@color/white2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/register_button_background"
+        app:layout_constraintEnd_toEndOf="@+id/register_cPass_input"
+        app:layout_constraintStart_toStartOf="@+id/register_cPass_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_cPass_input" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="və ya"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_cPass_input" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:srcCompat="@drawable/login_screen_other_options" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:text="Hesabınız var?"
+            android:textColor="@color/white2"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="781dp" />
+
+        <TextView
+            android:id="@+id/register_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/goldman"
+            android:paddingTop="5dp"
+            android:text="Giriş"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="775dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/register_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="83dp"
+        android:layout_height="78dp"
+        android:indeterminateTint="@color/progress_bar_color"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/register_button"
+        app:layout_constraintEnd_toEndOf="@+id/register_button"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/register_button"
+        app:layout_constraintTop_toTopOf="@+id/register_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
