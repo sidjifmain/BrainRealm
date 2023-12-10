@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/question_background"
+    tools:context=".Question">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="350dp"
+        android:layout_height="530dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/white_box" />
+
+    <TextView
+        android:id="@+id/sual"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="Uzaq ekzoplanetlərin atmosferlərini təhlil etmək üçün adətən hansı üsuldan istifadə olunur?"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+    <ImageView
+        android:id="@+id/aimage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toBottomOf="@+id/sual"
+        app:srcCompat="@drawable/question_rectangle" />
+
+    <ImageView
+        android:id="@+id/cimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/bimage"
+        app:layout_constraintStart_toStartOf="@+id/bimage"
+        app:layout_constraintTop_toBottomOf="@+id/bimage"
+        app:srcCompat="@drawable/question_rectangle" />
+
+    <ImageView
+        android:id="@+id/bimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/aimage"
+        app:layout_constraintStart_toStartOf="@+id/aimage"
+        app:layout_constraintTop_toBottomOf="@+id/aimage"
+        app:srcCompat="@drawable/question_rectangle" />
+
+    <ImageView
+        android:id="@+id/dimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cimage"
+        app:layout_constraintStart_toStartOf="@+id/cimage"
+        app:layout_constraintTop_toBottomOf="@+id/cimage"
+        app:srcCompat="@drawable/question_rectangle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/dimage"
+        app:layout_constraintStart_toStartOf="@+id/dimage"
+        app:layout_constraintTop_toBottomOf="@+id/dimage">
+
+        <ImageView
+            android:id="@+id/birx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/birx" />
+
+        <ImageView
+            android:id="@+id/ikix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ikix" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cavabiTesdiqle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/cavabi_tesdiqle" />
+
+    <TextView
+        android:id="@+id/aTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İnfraqırmızı spektroskopiya"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/aimage"
+        app:layout_constraintEnd_toEndOf="@+id/aimage"
+        app:layout_constraintStart_toStartOf="@+id/aimage"
+        app:layout_constraintTop_toTopOf="@+id/aimage" />
+
+    <TextView
+        android:id="@+id/bTexview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultraviyole görüntüləmə"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bimage"
+        app:layout_constraintEnd_toEndOf="@+id/bimage"
+        app:layout_constraintStart_toStartOf="@+id/bimage"
+        app:layout_constraintTop_toTopOf="@+id/bimage" />
+
+    <TextView
+        android:id="@+id/cTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radioteleskoplar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cimage"
+        app:layout_constraintEnd_toEndOf="@+id/cimage"
+        app:layout_constraintStart_toStartOf="@+id/cimage"
+        app:layout_constraintTop_toTopOf="@+id/cimage" />
+
+    <TextView
+        android:id="@+id/dTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qravitasiya linzalanması"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/dimage"
+        app:layout_constraintEnd_toEndOf="@+id/dimage"
+        app:layout_constraintStart_toStartOf="@+id/dimage"
+        app:layout_constraintTop_toTopOf="@+id/dimage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(animation: Animation?) {
                 // Animasyon bittiğinde yapılacak işlemler
+
                 startLoginActivity()
             }
 
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startLoginActivity() {
-        val intent = Intent(this, Register::class.java)
+        val intent = Intent(this, Login::class.java)
         startActivity(intent)
         finish()
     }

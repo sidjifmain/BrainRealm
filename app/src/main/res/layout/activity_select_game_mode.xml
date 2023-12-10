@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/themes_screen_background"
+    tools:context=".SelectGameMode">
+
+    <ImageView
+        android:id="@+id/select_game_mode_ferdi"
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ferdi_mode_background" />
+
+    <ImageView
+        android:id="@+id/select_game_mode_duel"
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/select_game_mode_ferdi"
+        app:layout_constraintStart_toStartOf="@+id/select_game_mode_ferdi"
+        app:layout_constraintTop_toBottomOf="@+id/select_game_mode_ferdi"
+        app:srcCompat="@drawable/duel_mode_background" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.PasswordTransformationMethod
+import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import androidx.core.view.isVisible
@@ -24,9 +25,11 @@ class Register : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
-
+        Log.d("salam" , "Test")
         // Initialize UserViewModel using ViewModelProvider
-        userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        userViewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(UserViewModel::class.java)
+
+        Log.d("salam" , "Test")
 
         // Initialize UI elements and set up event listeners
         initUi()
@@ -40,6 +43,8 @@ class Register : AppCompatActivity() {
             finish()
         }
     }
+
+
 
     // Function to initialize UI elements and set up event listeners
     private fun initUi() {
@@ -65,6 +70,13 @@ class Register : AppCompatActivity() {
                 // Empty fields are not allowed, show a toast message
                 Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
             }
+        }
+        binding.qayda.setOnClickListener {
+            startActivity(
+                Intent(
+                    this , Terms::class.java
+                )
+            )
         }
 
         binding.registerPassVisibleBtn.setOnClickListener {

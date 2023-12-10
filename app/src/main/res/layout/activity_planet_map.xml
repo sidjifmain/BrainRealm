@@ -16,32 +16,18 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <ImageView
-            android:id="@+id/imageView27"
+            android:id="@+id/planet_map_leaderbord_btn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:srcCompat="@drawable/leaderbord_icon" />
 
         <ImageView
-            android:id="@+id/imageView28"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            app:srcCompat="@drawable/friend_icon" />
-
-        <ImageView
-            android:id="@+id/imageView29"
+            android:id="@+id/notification_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:srcCompat="@drawable/notification_icon" />
-
-        <ImageView
-            android:id="@+id/planet_map_settings_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            app:srcCompat="@drawable/settings_icon" />
 
 
     </LinearLayout>
@@ -56,22 +42,22 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/planet_map_user_image"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="center|start"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/mehdi"
+            android:src="@drawable/pp"
             app:civ_border_color="@color/white2"
             app:civ_border_width="1dp" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/planet_map_fullName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="Name Surname"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -81,21 +67,21 @@
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/imageView26"
+            android:id="@+id/planet_map_coin_icon"
             android:layout_width="23dp"
             android:layout_height="34dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/coin_icon" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/planet_map_coin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="15dp"
             android:fontFamily="@font/goldman"
             android:paddingTop="5dp"
-            android:text="134"
+            android:text="0"
             android:textColor="@color/white2"
             android:textSize="20sp" />
     </LinearLayout>
@@ -135,7 +121,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView19"
+                    android:id="@+id/planet1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -145,58 +131,58 @@
                     app:srcCompat="@drawable/planet_earth" />
 
                 <ImageView
-                    android:id="@+id/imageView21"
+                    android:id="@+id/planet2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="300dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.03"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView19"
+                    app:layout_constraintTop_toBottomOf="@+id/planet1"
                     app:srcCompat="@drawable/planet_1" />
 
                 <ImageView
-                    android:id="@+id/imageView22"
+                    android:id="@+id/planet3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="300dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.87"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView21"
+                    app:layout_constraintTop_toBottomOf="@+id/planet2"
                     app:srcCompat="@drawable/planet_2" />
 
                 <ImageView
-                    android:id="@+id/imageView23"
+                    android:id="@+id/planet4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="250dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.13"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView22"
+                    app:layout_constraintTop_toBottomOf="@+id/planet3"
                     app:srcCompat="@drawable/planet_3" />
 
                 <ImageView
-                    android:id="@+id/imageView24"
+                    android:id="@+id/planet5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="200dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.85"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView23"
+                    app:layout_constraintTop_toBottomOf="@+id/planet4"
                     app:srcCompat="@drawable/planet_4" />
 
                 <ImageView
-                    android:id="@+id/imageView25"
+                    android:id="@+id/planet6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="300dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.11"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView24"
+                    app:layout_constraintTop_toBottomOf="@+id/planet5"
                     app:srcCompat="@drawable/planet_5" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>

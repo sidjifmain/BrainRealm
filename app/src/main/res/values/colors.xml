@@ -5,4 +5,7 @@
     <color name="white2">#BBBBBB</color>
     <color name="dark_back">#19171A</color>
     <color name="progress_bar_color">#B936EE</color>
+    <color name="gray">#4B736363</color>
+    <color name="transparnt">#00000000</color>
+
 </resources>

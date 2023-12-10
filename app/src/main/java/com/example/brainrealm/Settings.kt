@@ -36,10 +36,10 @@ class Settings : AppCompatActivity() {
         userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 
 
-        binding.button2.setOnClickListener {
-            fullNameSave(userId.toString() , "Mehdi Israfilov")
-            startImagePicker()
-        }
+
+        fullNameSave(userId.toString() , "Mehdi Israfilov")
+        startImagePicker()
+
 
 
 

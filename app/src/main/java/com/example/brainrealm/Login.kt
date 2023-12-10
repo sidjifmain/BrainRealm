@@ -51,7 +51,7 @@ class Login : AppCompatActivity() {
 
         // Observe LiveData changes to update UI when user data changes
         userViewModel.user.observe(this, { user ->
-            val intent = Intent(this, Themes::class.java)
+            val intent = Intent(this, SelectGameMode::class.java)
             startActivity(intent)
             finish()
         })

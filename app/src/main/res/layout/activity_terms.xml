@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_background"
+    tools:context=".Terms">
+
+    <ImageView
+        android:id="@+id/terms_back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/goldman"
+        android:text="Qaydalar və Şərtlər"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms_back_button" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/terms_background" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imageView30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="BrainRealM mobil oyunu üzrə  Qaydalar və Şərtlər - Versiya 1.0 Bu Qaydalar və Şərtlər BrainRealM (BrainRealM MMC) (bundan sonra şirkət) tərəfindən təmin edilən  və istifadəçi (bundan sonra iştirakçı) arasında İntellektual Oyunundan istifadənizi tənzimləyir. Oyunda iştirak etməklə siz bu şərtlərə əməl etməyə razılaşırsınız. Bu şərtlərlə razı deyilsinizsə, Oyundan istifadə edə bilməyəcəksiz.   1. Giriş: Oyunçuların oyunu oynadıqları ölkənin yurisdiksiyasına əsasən onlayn oyunlarda iştirak etmək üçün ən azı 18 yaşı və ya qanuni yaşı tamam olmalıdır.  Oyun daxilində duel və satınalma əməliyyatlarını keçirmək üçün oyunçuların oyunu oynadıqları ölkənin yurisdiksiyasına əsasən onlayn oyunlarda iştirak etmək üçün ən azı 18 yaşı və ya qanuni yaşı tamam olmalıdır.  2. Oyun qaydaları: Oyun intellektual duelləri əhatə edir, burada iştirakçılar qitələr, planetlər, şəhərlər və tarixi şəxsiyyətlər daxil olmaqla müxtəlif kateqoriyalar üzrə biliklərini nümayiş etdirmək üçün yarışırlar. Duellər real pul mərclərini əhatə edə bilər. İştirakçılar aid olduqları ölkənin yudisdiksiyasında nəzərdə tutulan şans oyunları haqqında qanunları başa düşmək və onlara əməl etmək üçün məsuliyyət daşıyırlar. 3. Oyundaxili Satınalmalar: Oyun virtual əşyalar, coinlər və s.  kimi oyundaxili satınalmalar təklif edə bilər. Satın aldığınız məhsulun geri qaytarılması üçün İstehlakçı hüqularının qorunması haqqında yurisdiksiyasında olduğunuz ölkənin qanunları əsasında təmin edilir. İstifadəçilər ödəniş məlumatlarının təhlükəsizliyini təmin etmək üçün bütün məsuliyyəti öz üzərinə götürür və  Şirkət icazəsiz əməliyyatlara görə məsuliyyət daşımır. 4. Əqli Mülkiyyət: Oyun və qrafik, mətn və proqram təminatı daxil olmaqla birlikdə oyunla əlaqəli bütün əlaqəli məzmunlar Şirkətin əqli mülkiyyətidir. İştirakçılar Oyun daxilində istifadəçi tərəfindən yaradılan məzmunlarına əqli mülkiyyət hüquqlarını saxlayırlar. 5. Mərc: İştirakçılar duellərdə real pul mərc edə bilərlər. Şirkət oyun zamanı dəymiş itkilərə görə məsuliyyət daşımır. Şirkət mərc və uduşlara məhdudiyyətlər qoymaq hüququnu özündə saxlayır.  6. Mübahisələrin həlli: İştirakçılar arasında yaranan bütün mübahisələr şəxsi qaydada həll edilir. Şirkət mübahisələrin vasitəçiliyinə görə məsuliyyət daşımır. Şübhəli və ya dələduzluq fəaliyyəti halında, Şirkət hesabın dayandırılması da daxil olmaqla, araşdırma apara və müvafiq tədbirlər görə bilər. 7. Məxfilik: Şirkət Şəxsi məlumatların qorunması haqqında Azərbaycan Respublikasının qanunları əsasında mövcud olan Məxfilik Siyasətinə uyğun olaraq şəxsi məlumatları toplayır və emal edir. 8. Müqaviləyə Xitam: Şirkət şərtləri pozduğuna və ya hər hansı digər səbəbə görə istifadəçinin hesabını ləğv etmək və ya dayandırmaq hüququnu özündə saxlayır. 9. Düzəlişlər: Şirkət bu şərtləri istənilən vaxt yeniləyə bilər. İştirakçılar hər hansı əhəmiyyətli dəyişikliklər barədə məlumatlandırılacaqlar. 10. Qanuni Baza: Bu Müqavilə Azərbaycan Respublikasının Mülki-prosesual məcəlləsi ilə tənzimlənir. Bu Müqavilədən irəli gələn və ya onunla əlaqəli hər hansı mübahisə halında tərəflər, mübahisələrin həlli üçün Azərbaycan Respublikasının İqtisad məhkəməsinə müraciət edə bilər.  "
+                android:textColor="@color/white2"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
